@@ -3,9 +3,13 @@
  */
 
 import org.junit.Test;
+import java.util.Arrays;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void runs() {
+    @Test public void calculatesSuccessfully() {
+    	System.out.println(Arrays.toString(App.calculate(new int[]{0,1,2,3,4,5,6,7,8,9,10,11,12}, 4, 8, 10)));
+    	assertTrue(Arrays.equals(new double[]{1.5,5.5,8.5,11},
+    	 App.calculate(new int[]{0,1,2,3,4,5,6,7,8,9,10,11,12}, 4, 8, 10)));
     }
 }
