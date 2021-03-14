@@ -9,10 +9,10 @@ public class App {
 		double avg2 = Arrays.stream(pt2).average().orElse(-1);
 		double avg3 = Arrays.stream(pt3).average().orElse(-1);
 		double avg4 = Arrays.stream(pt4).average().orElse(-1);
-		System.out.printf("Slice 1 [%d:%d] has an average of %f\n", 0, idx1, avg1);
-		System.out.printf("Slice 2 [%d:%d] has an average of %f\n", idx1, idx2, avg2);
-		System.out.printf("Slice 3 [%d:%d] has an average of %f\n", idx2, idx3, avg3);
-		System.out.printf("Slice 4 [%d:%d] has an average of %f\n", idx3, arr.length, avg4);
+		System.out.printf("Slice 1 [%d:%d] has an average of %.2f\n", 0, idx1, avg1);
+		System.out.printf("Slice 2 [%d:%d] has an average of %.2f\n", idx1, idx2, avg2);
+		System.out.printf("Slice 3 [%d:%d] has an average of %.2f\n", idx2, idx3, avg3);
+		System.out.printf("Slice 4 [%d:%d] has an average of %.2f\n", idx3, arr.length, avg4);
 	}
 	public static void main(String[] args) {
 		calculate(new int[]{0,1,2,3,4,5,6,7,8,9,10,11,12}, 4, 8, 10);
